@@ -28,5 +28,4 @@ pipeline {
                 echo "Hi Hello"
             }
         }
-    }
   }
