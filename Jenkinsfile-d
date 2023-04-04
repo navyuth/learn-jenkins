@@ -27,6 +27,10 @@ pipeline {
         }
       }
       stage("two") {
+        input {
+            message "Should we continue?"
+            ok "yes, we should continue"
+        }
         steps {
            echo "two"
         }
