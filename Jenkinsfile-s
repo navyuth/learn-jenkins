@@ -17,7 +17,9 @@ node("workstation") {
       }
 
       stage("two") {
+        input(id: "deploy_approval, message: "Approve_deployment", ok: "Deploy", reject: "cancel") {
            echo "two"
+        }
       }
     } catch (e) {
         stage("Declarative: Post Actions") {
